@@ -1,0 +1,18 @@
+[package]
+name = "const-source-position"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "An implementation of a procedural macro that adds a const argument to a type with its source position."
+authors = ["Tiger"]
+repository = "https://github.com/tigergold59/const-source-position"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "1.0.92", features = ["full", "extra-traits"] }
+quote = "1.0"
